@@ -2,7 +2,7 @@
 
 基于 TanStack Start 的全栈 React 应用模板，部署在 Cloudflare Workers 上。
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/tanstack-start-d1-template)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/moremorefun/tanstack-start-d1-template)
 
 <!-- dash-content-start -->
 
@@ -24,7 +24,7 @@
 ### 1. 创建项目
 
 ```bash
-pnpm create cloudflare@latest --template=cloudflare/templates/tanstack-start-d1-template
+pnpm create cloudflare@latest --template=github:moremorefun/tanstack-start-d1-template
 cd my-app
 ```
 
