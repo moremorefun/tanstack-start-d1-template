@@ -1,7 +1,25 @@
 {
-  "name": "my-app",
-  "private": true,
+  "name": "tanstack-start-d1-template",
   "type": "module",
+  "description": "Full-stack React app with TanStack Start, Cloudflare D1, and KV",
+  "cloudflare": {
+    "label": "TanStack Start + D1 Starter",
+    "products": [
+      "Workers",
+      "D1",
+      "KV"
+    ],
+    "categories": [
+      "starter",
+      "storage"
+    ],
+    "bindings": {
+      "DB": "D1 database for SQLite storage with Drizzle ORM",
+      "KV": "KV namespace for caching and sessions"
+    },
+    "previewImageUrl": "https://imagedelivery.net/YOUR_PREVIEW_IMAGE_URL",
+    "previewIconUrl": "https://imagedelivery.net/YOUR_ICON_URL"
+  },
   "scripts": {
     "dev": "vite dev --host",
     "build": "vite build",
@@ -22,8 +40,8 @@
     "preview": "pnpm run build && vite preview",
     "cf-typegen": "wrangler types",
     "db:generate": "drizzle-kit generate",
-    "db:migrate:local": "wrangler d1 migrations apply my-app-db --local",
-    "db:migrate:remote": "wrangler d1 migrations apply my-app-db --remote"
+    "db:migrate:local": "wrangler d1 migrations apply my-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply my-db --remote"
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.13.8",

@@ -1,6 +1,8 @@
 # Development Environment Variables
 # Copy this file to .dev.vars and fill in the values
 
+ENVIRONMENT=development
+
 # JWT Secret for authentication (generate a random string)
 JWT_SECRET=your-secret-key-at-least-32-characters-long
 

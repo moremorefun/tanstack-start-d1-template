@@ -11,8 +11,10 @@ export async function applyMigrations() {
   const migrations = env.TEST_MIGRATIONS as D1Migration[]
 
   if (migrations && migrations.length > 0) {
+    // @ts-expect-error - DB binding is defined in wrangler.jsonc but not in ProvidedEnv
+    const db = env.DB as D1Database
     for (const migration of migrations) {
-      await env.DB.exec(migration.queries.join('\n'))
+      await db.exec(migration.queries.join('\n'))
     }
   }
 }
