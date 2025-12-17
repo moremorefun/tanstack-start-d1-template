@@ -1,0 +1,3 @@
+# Integration tests go here
+# These tests run in Cloudflare Workers environment with D1/KV/R2 access
+# Example: tests/integration/api/health.test.ts
