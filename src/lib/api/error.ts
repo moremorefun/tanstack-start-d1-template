@@ -41,7 +41,7 @@ export interface ApiErrorResponse {
 export function createApiError(
   error: string,
   code: ErrorCode,
-  includeSuccess: boolean = false
+  includeSuccess: boolean = false,
 ): ApiErrorResponse {
   const response: ApiErrorResponse = { error, code }
   if (includeSuccess) {

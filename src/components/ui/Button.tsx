@@ -61,7 +61,7 @@ export function Button({
           'h-12 rounded-lg px-6 text-base': size === 'lg',
         },
 
-        className
+        className,
       )}
       disabled={disabled}
       {...props}

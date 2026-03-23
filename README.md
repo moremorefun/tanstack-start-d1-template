@@ -83,15 +83,15 @@ pnpm dev
 
 ## 常用命令
 
-| 命令 | 说明 |
-|------|------|
-| `pnpm dev` | 启动开发服务器 |
-| `pnpm build` | 构建生产版本 |
-| `pnpm deploy` | 部署到 Cloudflare |
-| `pnpm test` | 运行测试 |
-| `pnpm db:generate` | 生成数据库迁移 |
-| `pnpm db:migrate:local` | 本地应用迁移 |
-| `pnpm db:migrate:remote` | 生产应用迁移 |
+| 命令                     | 说明              |
+| ------------------------ | ----------------- |
+| `pnpm dev`               | 启动开发服务器    |
+| `pnpm build`             | 构建生产版本      |
+| `pnpm deploy`            | 部署到 Cloudflare |
+| `pnpm test`              | 运行测试          |
+| `pnpm db:generate`       | 生成数据库迁移    |
+| `pnpm db:migrate:local`  | 本地应用迁移      |
+| `pnpm db:migrate:remote` | 生产应用迁移      |
 
 ## 项目结构
 

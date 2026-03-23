@@ -1,5 +1,8 @@
 import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core'
 import { sql } from 'drizzle-orm'
+import { monotonicFactory } from 'ulid'
+
+const generateId = monotonicFactory()
 
 /**
  * Database Schema
@@ -17,7 +20,9 @@ import { sql } from 'drizzle-orm'
  * Uncomment and customize for your needs
  */
 export const users = sqliteTable('users', {
-  id: text('id').primaryKey(),
+  id: text('id')
+    .primaryKey()
+    .$defaultFn(() => generateId()),
   email: text('email').notNull().unique(),
   name: text('name'),
   createdAt: integer('created_at', { mode: 'timestamp' })

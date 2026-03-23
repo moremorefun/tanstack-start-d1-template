@@ -50,5 +50,5 @@ export default tseslint.config(
       'test-results/',
     ],
   },
-  prettier // Must be last to disable conflicting Prettier rules
+  prettier, // Must be last to disable conflicting Prettier rules
 )

@@ -36,7 +36,7 @@ export function Select({
           'flex w-full items-center justify-between rounded-xl border-2 border-gray-200 bg-gray-50/50 px-4 py-3 text-gray-800 transition-all duration-200',
           'focus:border-brand-primary/50 focus:ring-brand-primary/20 focus:bg-white focus:ring-4 focus:outline-none',
           'disabled:cursor-not-allowed disabled:opacity-50',
-          className
+          className,
         )}
       >
         <SelectPrimitive.Value placeholder={placeholder} />
@@ -74,7 +74,7 @@ function SelectItem({ children, className, ...props }: SelectItemProps) {
       className={cn(
         'relative flex cursor-pointer items-center rounded-lg px-8 py-2 text-sm text-gray-700 outline-none select-none',
         'data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[highlighted]:bg-gray-100',
-        className
+        className,
       )}
       {...props}
     >
