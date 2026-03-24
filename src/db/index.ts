@@ -6,8 +6,7 @@ import * as schema from './schema'
  *
  * Usage in API routes:
  * ```ts
- * const env = (request as Request & { cf?: { env?: Env } }).cf?.env
- * if (!env?.DB) throw new Error('Database not configured')
+ * import { env } from 'cloudflare:workers'
  * const db = createDb(env.DB)
  * ```
  */

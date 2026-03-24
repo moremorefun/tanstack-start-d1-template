@@ -13,6 +13,7 @@ const config = defineConfig({
   server: {
     port: PORT,
     strictPort: true,
+    allowedHosts: true,
   },
   build: {
     target: 'esnext',
